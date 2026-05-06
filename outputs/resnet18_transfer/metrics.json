@@ -1,0 +1,123 @@
+{
+  "model_name": "resnet18",
+  "train_mode": "transfer",
+  "best_val_loss": 0.1627313852034233,
+  "best_val_acc": 0.9629629629629629,
+  "test_loss": 0.17792442087773924,
+  "test_acc": 0.9481481481481482,
+  "avg_epoch_time_sec": 21.78485,
+  "total_params": 11179590,
+  "trainable_params": 3078,
+  "class_names": [
+    "Crazing",
+    "Inclusion",
+    "Patches",
+    "Pitted_Surface",
+    "Rolled-in_Scale",
+    "Scratches"
+  ],
+  "classification_report": {
+    "Crazing": {
+      "precision": 0.9565217391304348,
+      "recall": 0.9777777777777777,
+      "f1-score": 0.967032967032967,
+      "support": 45.0
+    },
+    "Inclusion": {
+      "precision": 0.9534883720930233,
+      "recall": 0.9111111111111111,
+      "f1-score": 0.9318181818181818,
+      "support": 45.0
+    },
+    "Patches": {
+      "precision": 0.9574468085106383,
+      "recall": 1.0,
+      "f1-score": 0.9782608695652174,
+      "support": 45.0
+    },
+    "Pitted_Surface": {
+      "precision": 0.9090909090909091,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.898876404494382,
+      "support": 45.0
+    },
+    "Rolled-in_Scale": {
+      "precision": 0.9772727272727273,
+      "recall": 0.9555555555555556,
+      "f1-score": 0.9662921348314607,
+      "support": 45.0
+    },
+    "Scratches": {
+      "precision": 0.9347826086956522,
+      "recall": 0.9555555555555556,
+      "f1-score": 0.945054945054945,
+      "support": 45.0
+    },
+    "accuracy": 0.9481481481481482,
+    "macro avg": {
+      "precision": 0.9481005274655643,
+      "recall": 0.9481481481481482,
+      "f1-score": 0.9478892504661923,
+      "support": 270.0
+    },
+    "weighted avg": {
+      "precision": 0.9481005274655642,
+      "recall": 0.9481481481481482,
+      "f1-score": 0.9478892504661923,
+      "support": 270.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      44,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      41,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      45,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      40,
+      1,
+      2
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      43,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      43
+    ]
+  ],
+  "resolved_data_dir": "classification_dataset",
+  "normalization": "imagenet",
+  "num_channels": 3
+}
